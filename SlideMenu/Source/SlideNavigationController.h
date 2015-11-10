@@ -55,6 +55,7 @@ extern NSString  *const SlideNavigationControllerDidReveal;
 @property (nonatomic, strong) UIViewController *leftMenu;
 @property (nonatomic, strong) UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic, assign) CGFloat menuWidth;
 @property (nonatomic, assign) CGFloat portraitSlideOffset;
 @property (nonatomic, assign) CGFloat landscapeSlideOffset;
 @property (nonatomic, assign) CGFloat panGestureSideOffset;

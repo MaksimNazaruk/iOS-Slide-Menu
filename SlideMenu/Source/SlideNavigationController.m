@@ -677,6 +677,11 @@ static SlideNavigationController *singletonInstance;
 
 - (CGFloat)slideOffset
 {
+    
+    if (self.menuWidth > 0) {
+        return self.view.frame.size.width - self.menuWidth;
+    }
+    
 	return (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation))
 		? self.landscapeSlideOffset
 		: self.portraitSlideOffset;
